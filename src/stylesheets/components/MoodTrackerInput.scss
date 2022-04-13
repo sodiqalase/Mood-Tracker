@@ -1,0 +1,95 @@
+.moodTracker__inputContent{
+  width: 276px;
+  &__logo{
+    width: 94px;
+    display: block;
+    margin: 0 auto 22px auto;
+
+  }
+  &__question{
+    font-family: "Nunito-Bold";
+    font-size: 24px;
+    text-align: center;
+    color: $brown;
+    line-height: 26px;
+    margin-bottom: 37px;
+  }
+  &__moodGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 205px;
+    margin: 0 auto 16px auto
+   
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 26px;
+    height: 26px;
+    text-align: center;
+    font-family: "Nunito-SemiBold";
+    margin-bottom: 44px;
+    &.excited {
+      color:#32C252
+    }
+    &.indifferent {
+      color:#FF9635
+    }
+    &.sad {
+      color:#F93131
+    }
+
+  }
+
+  &__button {
+    width: 134px;
+    height:41px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: $dark-blue;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    color: #ffffff;
+    outline: none;
+    text-align: center;
+    border: none;
+
+    &.inactive {
+      background-color: $grey;
+      cursor: not-allowed;
+    }
+  }
+
+  &__mood{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    outline: none;
+    cursor: pointer;
+    background: rgba(175, 170, 168, 0.2);
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    
+    img{
+      width: 30px
+    }
+
+    &.excited {
+      background: rgba(50, 194, 82, 0.2);
+      border: 2px solid #32C252
+    }
+    &.indifferent {
+      background: rgba(255, 150, 53, 0.2);
+      border: 2px solid #FF9635
+    }
+    &.sad {
+      background: rgba(249, 49, 49, 0.1);
+      border: 2px solid #F93131
+    }
+    
+  }
+}
