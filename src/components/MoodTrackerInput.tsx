@@ -54,6 +54,7 @@ const MoodTrackerInput = ({
 						onClick={() => {
 							setSelectedMood(mood);
 						}}
+						key={`mood-${index}`}
 						className={`moodTracker__inputContent__mood ${evaluateCurrentMood(
 							selectedMood?.value ?? "",
 							mood.value

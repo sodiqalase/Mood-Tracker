@@ -54,6 +54,7 @@ const MoodTrackerResult = ({ results }: { results: ImoodObject[] | [] }) => {
 									result.value,
 									result.value
 								)}`}
+								key={`resultItem-${index}`}
 							>
 								<div className="moodTracker__resultContent__flex">
 									<span
